@@ -5,7 +5,7 @@ const ayarlar = require('./ayarlar.json');
 var prefix = ayarlar.prefix;
 
 client.on('ready', () => {
-  console.log(`BOT: ${client.user.username} adı ile giriş yaptı!`);
+  console.log(`BOT: ${Abilere Selam Çatışmaya Devam xd} adı ile giriş yaptı!`);
 });
 
 client.on('message', msg => {
@@ -13,24 +13,24 @@ client.on('message', msg => {
   if (msg.author.id === ayarlar.id) return;
   if (msg.author.bot) return;
 
-  if (!msg.content.startsWith(prefix)) {
+  if (!msg.content.startsWith(s!)) {
 	  return;
   }
-  if (msg.content.toLowerCase() === prefix + 'ping') {
+  if (msg.content.toLowerCase() === s! + 'ping') {
     msg.reply('Pong! **' + client.ping + '** ms');
   }
-  if (msg.content.toLowerCase() === prefix + 'sa') {
+  if (msg.content.toLowerCase() === s! + 'sa') {
     msg.reply('Aleyküm selam!');
   }
-  if (msg.content.toLowerCase() === prefix + 'yaz') {
+  if (msg.content.toLowerCase() === s! + 'yaz') {
     msg.delete();
     msg.channel.sendMessage(msg.content);
   }
-  if (msg.content.toLowerCase() === prefix + 'temizle') {
+  if (msg.content.toLowerCase() === s! + 'temizle') {
     msg.channel.bulkDelete(100);
-    msg.channel.sendMessage("100 adet mesaj silindi! (Emirhan Saraç)");
+    msg.channel.sendMessage("100 adet mesaj silindi! (xEmirStrqfe_)");
   }
-  if (msg.content.toLowerCase() === prefix + 'reboot') {
+  if (msg.content.toLowerCase() === s! + 'reboot') {
     if (msg.author.id !== ayarlar.sahip) {
       msg.reply('Benim yapımcım değilsin!');
     } else {
